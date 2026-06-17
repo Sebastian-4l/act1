@@ -103,10 +103,9 @@ p {
 }
 
 /* La imagen de la computadora dentro de la tarjeta */
-.img {
-    flex-basis: 60%;       /* La imagen ocupará el 60% del ancho de la fila */
-    width: 100%;           /* Se adapta al porcentaje asignado */
-    height: auto;
+.card-img img {
+    flex-basis: 10%;       /* La imagen ocupará el 60% del ancho de la fila */
+    
 }
 
 /* El texto "The Mr. X homepage" al lado de la imagen */
