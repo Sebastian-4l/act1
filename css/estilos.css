@@ -1,0 +1,117 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y BASE
+   ========================================== */
+
+body {
+    background-color: #fec356; /* Color de fondo naranjo/amarillo exterior */
+    font-family: sans-serif;   /* Tipo de letra limpia */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para todos los párrafos del sitio */
+p {
+    line-height: 25px; /* Separación entre líneas de texto */
+    font-size: 17px;   /* Tamaño de la letra */
+}
+
+/* ==========================================
+   2. CONTENEDORES PRINCIPALES
+   ========================================== */
+
+/* Limita el ancho de la página y la centra */
+.contenedor {
+    width: 1200px;       /* Ancho fijo indicado en la guía */
+    margin: 88px auto;   /* 88px de espacio arriba/abajo, y 'auto' lo centra horizontalmente */
+}
+
+/* La gran caja blanca de fondo */
+.principal {
+    background-color: white; /* Fondo blanco */
+    padding-bottom: 40px;    /* Espacio interno abajo para que no se pegue al borde */
+}
+
+/* El título principal "Mr. X" */
+.titulo h1 {
+    padding-top: 40px;  /* Espacio verde interno superior */
+    padding-left: 40px; /* Margen interno izquierdo alineado */
+    margin: 0;          /* Quita márgenes por defecto del navegador */
+}
+
+/* Contenedor que usa Flexbox para poner la columna izquierda y la tarjeta lado a lado */
+.contenido-principal {
+    display: flex;         /* Activa el modo Layout Flexible (columnas automáticas) */
+    padding: 40px;         /* Espacio interno alrededor de todo el contenido */
+    gap: 40px;             /* Separación de espacio entre la columna izquierda y la tarjeta */
+}
+
+/* Le damos más espacio al texto izquierdo y dejamos que la tarjeta ocupe el resto */
+.izquierdo {
+    flex: 1; 
+}
+
+/* ==========================================
+   3. COMPONENTE: MENÚ DE CONTENIDOS
+   ========================================== */
+
+.menu {
+    border: solid;         /* Añade un borde */
+    border-width: 1px;     /* Grosor del borde fino */
+    width: 200px;          /* Ancho fijo del cuadro de contenidos */
+}
+
+/* Título dentro del menú "Contents" */
+.menu h3 {
+    padding: 10px 15px;      /* Espacio interno del texto */
+    margin: 0;               /* Resetea márgenes */
+    border-bottom: solid;    /* Línea divisoria abajo del título */
+    border-bottom-width: 1px;
+}
+
+/* Ítems de la lista del menú */
+.menu-contenido li {
+    margin-top: 10px;       /* Separa los números hacia abajo */
+    padding-bottom: 10px;
+}
+
+/* ==========================================
+   4. COMPONENTE: TARJETA DE INFORMACIÓN (CARD)
+   ========================================== */
+
+/* La caja gris de la derecha */
+.card {
+    border: solid;
+    border-width: 1px;
+    background-color: #f4f3f4; /* Color de fondo gris claro */
+    padding: 5px;              /* Pequeño espacio interno */
+    width: 350px;              /* Fijamos un ancho para la tarjeta */
+}
+
+/* Título superior de la tarjeta */
+.card h2 {
+    background-color: #ffc500; /* Fondo amarillo fuerte */
+    margin: 0;                 /* Elimina espacios externos */
+    padding: 6px;              /* Relleno interno del texto */
+    text-align: center;        /* Centra el texto "Mr. X" */
+}
+
+/* Sección interna de la tarjeta que tiene la foto y el texto del costado */
+.card-img {
+    padding-top: 6px;
+    display: flex;         /* Ponemos la imagen y el texto "The Mr. X homepage" de lado */
+    align-items: center;   /* Centra verticalmente ambos elementos */
+}
+
+/* La imagen de la computadora dentro de la tarjeta */
+.img {
+    flex-basis: 60%;       /* La imagen ocupará el 60% del ancho de la fila */
+    width: 100%;           /* Se adapta al porcentaje asignado */
+    height: auto;
+}
+
+/* El texto "The Mr. X homepage" al lado de la imagen */
+.card-img p {
+    margin-left: 3px;     /* Separación con la imagen */
+    flex-basis: 40%;      /* El texto ocupa el 40% restante */
+    font-size: 14px;      /* Un poco más pequeño para que quepa bien */
+}
